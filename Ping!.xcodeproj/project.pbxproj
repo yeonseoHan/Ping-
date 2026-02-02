@@ -6,13 +6,95 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FC4B92102F308F6A004703E1 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4B91F32F308F0F004703E1 /* WidgetKit.framework */; };
+		FC4B92112F308F6A004703E1 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4B91F52F308F10004703E1 /* SwiftUI.framework */; };
+		FC4B92202F308F6C004703E1 /* PingWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FC4B920F2F308F6A004703E1 /* PingWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FCC690992F30E93300CEF6E3 /* .gitignore in Sources */ = {isa = PBXBuildFile; fileRef = FCC690982F30E93200CEF6E3 /* .gitignore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC4B921E2F308F6C004703E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC4B91D72F308821004703E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC4B920E2F308F6A004703E1;
+			remoteInfo = PingWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC4B920A2F308F12004703E1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FC4B92202F308F6C004703E1 /* PingWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FC4B91DF2F308821004703E1 /* Ping!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ping!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4B91F32F308F0F004703E1 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FC4B91F52F308F10004703E1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FC4B920F2F308F6A004703E1 /* PingWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PingWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4B92262F3090D9004703E1 /* Ping!.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ping!.entitlements"; sourceTree = "<group>"; };
+		FCC690982F30E93200CEF6E3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FCC690722F30DF3400CEF6E3 /* Exceptions for "Utilities" folder in "Ping!" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppGroupManager.swift,
+			);
+			target = FC4B91DE2F308821004703E1 /* Ping! */;
+		};
+		FCC690732F30DF3400CEF6E3 /* Exceptions for "Utilities" folder in "PingWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppGroupManager.swift,
+			);
+			target = FC4B920E2F308F6A004703E1 /* PingWidgetExtension */;
+		};
+		FCC690952F30E3FF00CEF6E3 /* Exceptions for "Ping!" folder in "PingWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/PingAttributes.swift,
+			);
+			target = FC4B920E2F308F6A004703E1 /* PingWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		FC4B91E12F308821004703E1 /* Ping! */ = {
+		FCC6906D2F30DE7400CEF6E3 /* Utilities */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FCC690722F30DF3400CEF6E3 /* Exceptions for "Utilities" folder in "Ping!" target */,
+				FCC690732F30DF3400CEF6E3 /* Exceptions for "Utilities" folder in "PingWidgetExtension" target */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FCC6906E2F30DEC000CEF6E3 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FCC690832F30E30800CEF6E3 /* PingWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PingWidget;
+			sourceTree = "<group>";
+		};
+		FCD21A682F30DBD400479433 /* Ping! */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FCC690952F30E3FF00CEF6E3 /* Exceptions for "Ping!" folder in "PingWidgetExtension" target */,
+			);
 			path = "Ping!";
 			sourceTree = "<group>";
 		};
@@ -26,13 +108,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC4B920C2F308F6A004703E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4B92112F308F6A004703E1 /* SwiftUI.framework in Frameworks */,
+				FC4B92102F308F6A004703E1 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		FC4B91D62F308821004703E1 = {
 			isa = PBXGroup;
 			children = (
-				FC4B91E12F308821004703E1 /* Ping! */,
+				FCC690982F30E93200CEF6E3 /* .gitignore */,
+				FCD21A712F30DDB500479433 /* Shared */,
+				FC4B92262F3090D9004703E1 /* Ping!.entitlements */,
+				FCD21A682F30DBD400479433 /* Ping! */,
+				FCC690832F30E30800CEF6E3 /* PingWidget */,
+				FC4B91F22F308F0F004703E1 /* Frameworks */,
 				FC4B91E02F308821004703E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +137,27 @@
 			isa = PBXGroup;
 			children = (
 				FC4B91DF2F308821004703E1 /* Ping!.app */,
+				FC4B920F2F308F6A004703E1 /* PingWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FC4B91F22F308F0F004703E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC4B91F32F308F0F004703E1 /* WidgetKit.framework */,
+				FC4B91F52F308F10004703E1 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCD21A712F30DDB500479433 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FCC6906E2F30DEC000CEF6E3 /* Models */,
+				FCC6906D2F30DE7400CEF6E3 /* Utilities */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,13 +170,15 @@
 				FC4B91DB2F308821004703E1 /* Sources */,
 				FC4B91DC2F308821004703E1 /* Frameworks */,
 				FC4B91DD2F308821004703E1 /* Resources */,
+				FC4B920A2F308F12004703E1 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FC4B921F2F308F6C004703E1 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				FC4B91E12F308821004703E1 /* Ping! */,
+				FCD21A682F30DBD400479433 /* Ping! */,
 			);
 			name = "Ping!";
 			packageProductDependencies = (
@@ -69,6 +186,25 @@
 			productName = "Ping!";
 			productReference = FC4B91DF2F308821004703E1 /* Ping!.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FC4B920E2F308F6A004703E1 /* PingWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC4B92222F308F6C004703E1 /* Build configuration list for PBXNativeTarget "PingWidgetExtension" */;
+			buildPhases = (
+				FC4B920B2F308F6A004703E1 /* Sources */,
+				FC4B920C2F308F6A004703E1 /* Frameworks */,
+				FC4B920D2F308F6A004703E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PingWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = PingWidgetExtension;
+			productReference = FC4B920F2F308F6A004703E1 /* PingWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +217,9 @@
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					FC4B91DE2F308821004703E1 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					FC4B920E2F308F6A004703E1 = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
@@ -100,12 +239,20 @@
 			projectRoot = "";
 			targets = (
 				FC4B91DE2F308821004703E1 /* Ping! */,
+				FC4B920E2F308F6A004703E1 /* PingWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FC4B91DD2F308821004703E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4B920D2F308F6A004703E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,10 +266,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCC690992F30E93300CEF6E3 /* .gitignore in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4B920B2F308F6A004703E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC4B921F2F308F6C004703E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC4B920E2F308F6A004703E1 /* PingWidgetExtension */;
+			targetProxy = FC4B921E2F308F6C004703E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FC4B91E82F308824004703E1 /* Debug */ = {
@@ -249,15 +412,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Ping!.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QZ8ELGA5KB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -280,15 +447,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Ping!.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QZ8ELGA5KB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,6 +470,70 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC4B92232F308F6C004703E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PingWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QZ8ELGA5KB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PingWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PingWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kristenHan.Ping-.PingWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC4B92242F308F6C004703E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PingWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QZ8ELGA5KB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PingWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PingWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kristenHan.Ping-.PingWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,6 +558,15 @@
 			buildConfigurations = (
 				FC4B91EB2F308824004703E1 /* Debug */,
 				FC4B91EC2F308824004703E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC4B92222F308F6C004703E1 /* Build configuration list for PBXNativeTarget "PingWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC4B92232F308F6C004703E1 /* Debug */,
+				FC4B92242F308F6C004703E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

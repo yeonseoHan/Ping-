@@ -6,7 +6,6 @@
 //
 
 // Ping/Services/LiveActivityService.swift
-// Ping/Services/LiveActivityService.swift
 
 import ActivityKit
 import Foundation
